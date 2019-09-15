@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-catchme": "npm run compile-catchme-client && npm run compile-catchme-server",
+    "compile-catchme-client": "tsc -p resources/catchme/client",
+    "compile-catchme-server": "tsc -p resources/catchme/server"
   },
   "author": "",
   "license": "ISC",
